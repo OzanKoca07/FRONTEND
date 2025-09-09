@@ -1,0 +1,27 @@
+/* index.css */
+:root {
+  --radius: 10px;
+  --spacing: 12px;
+  --primary: #2563eb;
+  --danger: #dc2626;
+  --muted: #6b7280;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.secondary {
+  border: 1px solid #e5e7eb;
+}
+
+.btn.danger {
+  background: var(--danger);
+  color: #fff;
+}
