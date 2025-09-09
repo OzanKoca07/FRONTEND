@@ -8,8 +8,8 @@ import Postform from "../components/PostForm";
 export default function Posts(){
     const {posts, loadSeed, addPost, updatePost,removePost,loaded} = usePosts();
     const {users,loadSeed:loadUsers, loaded:usersLoaded} = useUsers();
-    const {creating, setCreating} = useState(false);
-    const {editingId, setEditingId} = useState<number | null>(null);
+    const [creating, setCreating] = useState(false);
+    const [editingId, setEditingId] = useState<number | null>(null);
     
     useEffect(() => { if (!loaded) loadSeed(); }, [loaded, loadSeed]);
 
